@@ -1,0 +1,239 @@
+/* 
+  common
+*/
+.box-1 {
+  height: 150px;
+  width: 150px;
+}
+
+.box-2 {
+  height: 30px;
+  width: 30px;
+}
+
+.box-3 {
+  height: 350px;
+  width: 350px;
+}
+
+.box-4 {
+  height: 200px;
+  width: 200px;
+}
+
+.box-adj-1 {
+  padding: 5px;
+  margin: 5px;
+}
+
+.box-adj-2 {
+  margin: 40px;
+}
+
+.box-adj-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-color-1 {
+  background-color: lightgray;
+}
+
+.content-color-2 {
+  background-color: lightgreen;
+}
+
+.content-color-3 {
+  background-color: lightcoral;
+}
+
+.content-color-4 {
+  background-color: lightskyblue;
+}
+
+/* 
+  list-style.html
+*/
+.list-1 {
+  list-style: square;
+}
+
+.list-2 {
+  list-style: none;
+}
+
+/*
+  index_display_flex.html
+*/
+.flex {
+  display: flex;
+}
+
+/* justify-contentプロパティ */
+/* 左寄せ(初期値と同じ) */
+.justify-content-1{
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 右寄せ */
+.justify-content-2{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 中央寄せ */
+.justify-content-3{
+  display: flex;
+  justify-content: center;
+}
+
+/* 両端が左右に寄り、等間隔 */
+.justify-content-4{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 両端が左右に寄り、等間隔。両端の余白:要素間余白=1:2 */
+.justify-content-5{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* align-itemsプロパティ */
+/* 上揃え(初期値と同じ) */
+.align-items-1{
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 下揃え */
+.align-items-2{
+  display: flex;
+  align-items: flex-end;
+}
+
+/* 中央揃え */
+.align-items-3{
+  display: flex;
+  align-items: center;
+}
+
+/* flex-directionプロパティ */
+/* 左から右に並べる(初期値と同じ) */
+.flex-direction-1{
+  display: flex;
+  flex-direction: row;
+}
+
+/* 右から左に並べる(並び順を変更) */
+.flex-direction-2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* 上から下に並べる(軸の方向を変更) */
+.flex-direction-3{
+  display: flex;
+  flex-direction: column;
+}
+
+/* 下から上に並べる(軸の方向と並び順を変更) */
+.flex-direction-4{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/*
+  index_display_block.html
+*/
+.display-block {
+  display: block;
+}
+
+/*
+  index_border.html
+*/
+.border-1 {
+  border: 1px solid black;
+}
+
+.border-2 {
+  border: 5px double red;
+}
+
+/*
+  index_padding.html
+*/
+/* [上下左右]の内側の余白をまとめて10pxに指定 */
+.padding-1 {
+  padding: 10px;
+}
+
+/* [上下][左右]の内側の余白をそれぞれ10px・20pxに指定 */
+.padding-2 {
+  padding: 10px 20px;
+}
+
+/* [上][左右][下]の内側の余白をそれぞれ10px・20px・30pxに指定 */
+.padding-3 {
+  padding: 10px 20px 30px;
+}
+
+/* [上][右][下][左]の内側の余白をそれぞれ10px・20px・30px・40pxに指定 */
+.padding-4 {
+  padding: 10px 20px 30px 40px;
+}
+
+/*
+  index_margin.html
+*/
+/* [上下左右]の外側の余白をまとめて10pxに指定 */
+.margin-1 {
+  margin: 10px;
+}
+
+/* [上下][左右]の外側の余白をそれぞれ10px・20pxに指定 */
+.margin-2 {
+  margin: 10px 20px;
+}
+
+/* [上][左右][下]の外側の余白をそれぞれ10px・20px・30pxに指定 */
+.margin-3 {
+  margin: 10px 20px 30px;
+}
+
+/* [上][右][下][左]の外側の余白をそれぞれ10px・20px・30px・40pxに指定 */
+.margin-4 {
+  margin: 10px 20px 30px 40px;
+}
+
+/* 値ではなく'auto'を設定すると、外側の余白を均等に割り振る */
+.margin-5 {
+  margin: 10px auto;
+}
+
+/*
+  index_position-3.html
+  index_position-4.html
+*/
+.position-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 相対位置の基準に変更(子要素の基準が変わる) */
+.position-2 {
+  position: relative;
+}
+
+/*
+  index_boxmodel.html
+*/
+.content-boxmodel {
+  margin: 10px;
+  border: 5px solid black;
+  padding: 20px;
+}

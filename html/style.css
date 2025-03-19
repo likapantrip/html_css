@@ -1,0 +1,12 @@
+/* index_img.html */
+.image {
+  height: 200px;
+  width: 180px;
+}
+
+/* index_form.html */
+.form {
+  padding: 5px;
+  margin: 5px;
+  display: block;
+}
