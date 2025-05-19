@@ -237,3 +237,11 @@
   border: 5px solid black;
   padding: 20px;
 }
+
+/* 
+  index_overflow.html
+*/
+
+.overflow {
+  overflow: scroll;
+}
