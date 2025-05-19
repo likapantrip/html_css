@@ -1,3 +1,12 @@
+/* common */
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
 /* index_img.html */
 .image {
   height: 200px;
@@ -9,4 +18,15 @@
   padding: 5px;
   margin: 5px;
   display: block;
+}
+
+/* index_form-label.html */
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 40px;
+  margin: 5px 10px;
+  text-align: center;
 }
