@@ -2,13 +2,43 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="名前" class="form">
-      <textarea name="comment" placeholder="コメント" class="form"></textarea>
-      <input type="submit" value="送信" class="form">
+    <form id="form">
+      <input type="text" name="name" placeholder="名前"><br>
+
+      <input type="radio" name="feedback" value="0" checked>Very Good
+      <input type="radio" name="feedback" value="1">Good
+      <input type="radio" name="feedback" value="2">Bad<br>
+
+      <!-- 画面上には表示しないが、回答方法="Web"をフォーム送信時にデータ連携する -->
+      <input type="hidden" name="how" value="Web" >
+      
+      <!-- valueで指定した値が、画面のボタンに表示される -->
+      <input type="submit" value="フィードバックを送信">
     </form>
+
+    <!-- 以下、コンソール画面に送信結果を表示 -->
+    <script>
+      // フォーム要素を取得
+      const form = document.getElementById('form');
+
+      // submitイベントをキャッチ
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // サーバー送信を止める
+
+        // フォームのデータを取得
+        const formData = new FormData(form);
+
+        // 値をオブジェクトに変換して表示
+        const data = Object.fromEntries(formData.entries());
+        console.log('フォームの入力値:', data);
+
+        // 各項目の値を表示
+        console.log('名前:', data.name);
+        console.log('フィードバック:', data.feedback);
+        console.log('回答方法:', data.how);
+      });
+    </script>
   </body>
 </html>
